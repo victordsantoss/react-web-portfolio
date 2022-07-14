@@ -1,0 +1,72 @@
+.landing-container {
+    width: auto;
+    height: 100vh;
+    background-color: #000;
+}
+
+.landing-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.landing-child .title {
+    display: inline-block;
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.landing-child .title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44CE7B);
+    background-size: 50% 100%;
+    border-radius: inherit;
+}
+
+.landing-child .title:hover::before {
+    animation: animate_border .75s linear infinite;
+}
+
+.landing-child .title span {
+    display: block;
+    background-color: #000;
+    padding: 20px 27px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+    font-size: 80px;
+    width: 18ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    .landing-child .title span {
+        font-size: 30px;
+        width: 19ch;
+    }
+}
+
+@keyframes animate_border {
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
