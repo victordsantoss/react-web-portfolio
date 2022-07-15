@@ -13,7 +13,7 @@ export const Skills = () => {
                     <Col>
                         <div className='skill-bx'>
                             <h2>Habilidades</h2>
-                            <p></p>
+                            <p className="title-line"></p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider'>
                                 {
                                     skills.map((skill) => {
@@ -28,7 +28,6 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img src={colorSharp} alt="" className="background-image-left" />
         </section>
     )
 }
