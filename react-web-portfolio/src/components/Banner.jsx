@@ -45,14 +45,13 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Bem vindo ao meu portfólio</span>
                         <h1>{`Olá, eu sou o Victor`} <br/><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                         <p>
                             Tenho 22 anos e sou estudante de Engenharia de Software pela Universidade de Brasília.
                             Atualmente tenho 2 anos de experiência de desenvolvimento web e mobile trabalhando de maneira full stack com foco nas tecnologias SQL - Mysql,
                             NoSQL - MongoDb, NodeJs, TypeScript, ReactJs, ReactNative, Bootstrap, CSS e StyledComponents, além de ser um entusiasta em metodologias ágeis.
                         </p>
-                        <button onClick={() => console.log("ok")} >Vamos nos conectar <AiOutlineArrowRight size={25} /></button>
+                        <button onClick={() => console.log("ok")} className="tagline">Vamos nos conectar <AiOutlineArrowRight size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="header img" />
