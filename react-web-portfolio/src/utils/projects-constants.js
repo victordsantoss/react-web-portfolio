@@ -31,15 +31,15 @@ export const projects = [
         link: 'https://concursoderedacao.dpu.def.br/'
     },
     {
-        title: 'GaiaDex',
-        description: 'Desenvolvedor Full stack',
-        imgUrl: gaiadex,
-        link: '#'
-    },
-    {
         title: 'Portal DPU',
         description: 'Desenvolvedor front end',
         imgUrl: portalDpu,
         link: 'https://www.dpu.def.br/'
+    },
+    {
+        title: 'GaiaDex',
+        description: 'Desenvolvedor Full stack',
+        imgUrl: gaiadex,
+        link: '#'
     }
 ]
