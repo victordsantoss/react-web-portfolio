@@ -18,7 +18,8 @@ export const Banner = () => {
         }, delta);
 
         return () => { clearInterval(ticker) };
-    }, [text])
+    }, [text]);
+
 
     const tick = () => {
         let i = loopNum % toRotate.length;
@@ -43,7 +44,7 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xl={12} md={6} xl={7}>
+                    <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Bem vindo ao meu portfólio</span>
                         <h1>{`Olá, eu sou o Victor`} <br/><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                         <p>
