@@ -1,9 +1,9 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
-import { skills } from '../utils/skills-constants';
-import { responsive } from '../utils/skills-constants';
+import { skills } from '../../utils/skills-constants';
+import { responsive } from '../../utils/skills-constants';
 import "react-multi-carousel/lib/styles.css";
-import colorSharp from '../assets/img/color-sharp.png'
+import './index.css';
 
 export const Skills = () => {
     return (
