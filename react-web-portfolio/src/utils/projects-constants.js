@@ -2,8 +2,9 @@ import groovooTicketing from '../assets/img/projects/groovoo-ticketing.png';
 import groovooSocialNetworking from '../assets/img/projects/groovoo-social-networking.jpeg';
 import groovooOrganizer from '../assets/img/projects/groovoo-organizer.jpeg';
 import concursoDeRedacao from '../assets/img/projects/dpu-concurso-de-redacao.png';
-import gaiadex from '../assets/img/projects/gaiadex.png';
 import portalDpu from '../assets/img/projects/portal-dpu.png';
+import promocaoDeDireitosHumanos from '../assets/img/projects/promocao-de-direitos-humanos.png';
+import gaiadex from '../assets/img/projects/gaiadex.png';
 
 export const projects = [
     {
@@ -37,9 +38,9 @@ export const projects = [
         link: 'https://www.dpu.def.br/'
     },
     {
-        title: 'GaiaDex',
+        title: 'Portal de Promoção de Direitos Humanos - DPU',
         description: 'Desenvolvedor Full stack',
-        imgUrl: gaiadex,
-        link: '#'
+        imgUrl: promocaoDeDireitosHumanos,
+        link: 'https://promocaodedireitoshumanos.dpu.def.br/'
     }
 ]
