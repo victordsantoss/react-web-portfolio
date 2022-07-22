@@ -1,8 +1,10 @@
-import { NavBar } from '../../components/NavBar';
-import { Banner } from '../../components/Banner';
-import { Skills } from '../../components/Skills';
-import { Projects } from '../../components/Projects';
-import { Development } from '../../components/Development';
+import { NavBar } from '../../components/NavBar/NavBar';
+import { Banner } from '../../components/Banner/Banner';
+import { Skills } from '../../components/Skills/Skills';
+import { Development } from '../../components/Development/Development';
+import { Projects } from '../../components/Project/Projects';
+import { Contact } from '../../components/Contact/Contact';
+import { Footer } from '../../components/Footer/Footer';
 
 const HomePage = () => {
     return (
@@ -12,6 +14,8 @@ const HomePage = () => {
             <Skills />
             <Development />
             <Projects />
+            <Contact />
+            <Footer />
         </div>
     )
 }
