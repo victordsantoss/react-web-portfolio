@@ -153,6 +153,7 @@ p.danger {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: blue; */
   padding: 80px 0;
   position: relative;
   height: 350px;
@@ -160,7 +161,9 @@ p.danger {
 
 .development-skills-box {
   position: absolute;
-  width: 70%;
+  /* background-color: red; */
+  margin-left: 20px;
+  width: 80%;
   height: 100%;
 }
 
@@ -191,5 +194,9 @@ p.danger {
 
 .line {
   border-bottom: 1px solid #eaeaea;
+}
+
+.row{
+   margin-left: 0;
 }
 

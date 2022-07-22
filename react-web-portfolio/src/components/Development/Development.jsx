@@ -10,7 +10,7 @@ export const Development = () => {
                 <p className="line"></p>
                 <div className="development-skills">
                     <div className="development-skills-box">
-                        <div className="row">
+                        <div className="row mx-0 my-0"ð>
                             {
                                 tecnologyIcons.map((icon) => {
                                     return (
