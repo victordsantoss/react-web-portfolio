@@ -1,6 +1,6 @@
 /************ Contact Css ************/
 .contact {
-  background-color: black;
+  background-color: #111;
   padding: 60px 0 200px 0;
 }
 
@@ -36,7 +36,7 @@
 
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
-  color: #121212;
+  color: #111;
 }
 
 .contact form input::placeholder, .contact form textarea::placeholder {
@@ -46,7 +46,7 @@
 }
 
 .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #121212;
+  color: #111;
   opacity: 0.8;
 }
 
@@ -73,7 +73,7 @@
 
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: #111;
   width: 0;
   height: 100%;
   position: absolute;

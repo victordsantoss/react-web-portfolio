@@ -96,18 +96,16 @@ p.danger {
 }
 
 
-
-
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
   position: relative;
   border-top: 3px solid #eaeaea;
-  background-color: #000;
+  background-color: #111;
 }
 
 .skill-bx {
-  background: #000;
+  background-color: #111;
   border-top: 5px solid #eaeaea;
   border-radius: 64px;
   text-align: center;
@@ -153,7 +151,6 @@ p.danger {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
   padding: 80px 0;
   position: relative;
   height: 350px;
@@ -161,7 +158,6 @@ p.danger {
 
 .development-skills-box {
   position: absolute;
-  /* background-color: red; */
   margin-left: 20px;
   width: 80%;
   height: 100%;
