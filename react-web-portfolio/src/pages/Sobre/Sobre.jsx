@@ -1,12 +1,11 @@
-import { Container, Row, Col } from "react-bootstrap";
 import { NavBar } from "../../components/NavBar/NavBar";
-import { Projects } from '../../components/Project/Projects';
+import { Timeline } from "../../components/Timeline/Timeline";
 
 export const AboutPage = () => {
     return (
         <div className="app">
             <NavBar />
-
+            <Timeline />
         </div>
     )
 }

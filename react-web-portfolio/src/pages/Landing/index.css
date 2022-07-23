@@ -1,7 +1,7 @@
 .landing-container {
     width: auto;
     height: 100vh;
-    background-color: #000;
+    background-color: #111;
 }
 
 .landing-child {
@@ -32,6 +32,7 @@
     background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44CE7B);
     background-size: 50% 100%;
     border-radius: inherit;
+    animation: animate_border .75s linear infinite;
 }
 
 .landing-child .title:hover::before {
@@ -40,7 +41,7 @@
 
 .landing-child .title span {
     display: block;
-    background-color: #000;
+    background-color: #111;
     padding: 20px 27px;
     border-radius: 3px;
     position: relative;
