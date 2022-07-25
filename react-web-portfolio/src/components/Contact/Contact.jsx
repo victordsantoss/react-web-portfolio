@@ -16,7 +16,6 @@ export const Contact = () => {
     const [buttonText, setButtonText] = useState('Enviar');
     const [status, setStatus] = useState({});
 
-
     const onFormUpdate = (category, value) => {
         setFormDetails({
             ...formDetails,
@@ -28,22 +27,22 @@ export const Contact = () => {
         e.preventDefault();
         setButtonText("Sending...");
         let response = await fetch("http://localhost:5001/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json;charset=utf-8",
-          },
-          body: JSON.stringify(formDetails),
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(formDetails),
         });
         setButtonText("Send");
         let result = await response.json();
         setFormDetails(formInitialDetails);
         if (result.code == 200) {
-          setStatus({ succes: true, message: 'Mensagem enviada com sucesso'});
+            setStatus({ succes: true, message: 'Mensagem enviada com sucesso' });
         } else {
-          setStatus({ succes: false, message: 'Algo deu errado, tente novamente mais tarde.'});
+            setStatus({ succes: false, message: 'Algo deu errado, tente novamente mais tarde.' });
         }
-      };
-    
+    };
+
     return (
         <section className="contact" id="contact">
             <Container>
@@ -53,7 +52,7 @@ export const Contact = () => {
                     </Col>
                     <Col md={6}>
                         <h2>Entrar em contato</h2>
-                        <form onSubmit={(e)=>handleSubmit(e)}>
+                        <form onSubmit={(e) => handleSubmit(e)}>
                             <Row>
                                 <Col sm={6} className="px-1">
                                     <input type="text" value={formDetails.firstName} placeholder="Nome" onChange={(e) => onFormUpdate('firstName', e.target.value)} />

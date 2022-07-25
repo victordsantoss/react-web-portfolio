@@ -1,18 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
-
-.about-container {
-    background-color: #121212;
-    padding-top: 80px;
-    width: 100vw;
-    height: 100vh;
-}
-
-.about-my {
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2{
+    padding-top: 30px;
+    font-size: 2rem;
 }
 
 .container-timeline {
@@ -128,9 +118,9 @@
     }
 }
 
-/* ************* RESPONSIVIDADE ********** */
-@media (max-width:768px) {
-    .about-container {
-        margin-top: 100px;
+/* *************** RESPONSIVIDADE ************** */
+@media (max-width: 768px) {
+    h2{
+        padding: 10px 0px;
     }
 }
