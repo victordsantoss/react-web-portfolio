@@ -1,5 +1,4 @@
 .project-card-list-container {
-    /* border: 1px solid #eaeaea; */
     padding: 10px 25px 0px 25px;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -21,12 +20,17 @@
     transition: 0.4s ease-in-out;
 }
 
-.project-card-list-container .tittle {
-    font-size: 26px;
-    font-weight: 800;
+.project-link{
+    text-decoration: none;
 }
 
-.project-card-list-container .description {
+.project-card-list-container .project-link .tittle {
+    font-size: 26px;
+    font-weight: 800;
+    color: #eaeaea;
+}
+
+.project-card-list-container .project-link .description {
     text-align: justify;
     color: #eaeaea;
 }
