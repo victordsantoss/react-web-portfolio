@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { NavBar } from '../../components/NavBar/NavBar';
 import { Banner } from '../../components/Banner/Banner';
 import { Skills } from '../../components/Skills/Skills';
@@ -7,6 +8,12 @@ import { Contact } from '../../components/Contact/Contact';
 import { Footer } from '../../components/Footer/Footer';
 
 const HomePage = () => {
+
+    useEffect(() => {
+        const newPageTitle = 'Home | <victordsantoss />';
+        document.title = newPageTitle;
+    }, []);
+
     return (
         <div className="app">
             <NavBar />
