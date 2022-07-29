@@ -1,16 +1,14 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import LandingPage from './pages/Landing/Landing';
 import HomePage from './pages/Home/Home';
-import AboutPage from './pages/Sobre/Sobre';
+import AboutPage from './pages/About/About';
 
 const ApplicationRoutes = () => {
     return (
         <Router>
             <Routes>
-                {/* <Route exact path="/" element={<LandingPage />} /> */}
                 <Route exact path="/" element={<HomePage />} />
-                <Route exact path="/sobre" element={<AboutPage />} />
+                <Route exact path="/about" element={<AboutPage />} />
             </Routes>
         </Router>
     );
