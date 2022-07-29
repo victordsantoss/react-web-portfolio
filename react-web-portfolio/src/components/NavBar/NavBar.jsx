@@ -7,8 +7,13 @@ import './index.css';
 
 export const NavBar = () => {
 
-    const [activeLink, setActiveLink] = useState('home');
+    const [activeLink, setActiveLink] = useState('Home');
     const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const newPageTitle = `${activeLink ? activeLink : 'Home'} | <victordsantoss />`;
+        document.title = newPageTitle;
+    }, [activeLink]);
 
     useEffect(() => {
         const onScroll = () => {
@@ -25,7 +30,7 @@ export const NavBar = () => {
     return (
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
             <Container>
-                {window.location.pathname.indexOf("/sobre") === -1 ?
+                {window.location.pathname.indexOf("/about") === -1 ?
                     <a href="/#home" className="brand">
                         <IoLogoXing
                             size={60}
@@ -43,20 +48,20 @@ export const NavBar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    {window.location.pathname.indexOf("/sobre") === -1 ?
+                    {window.location.pathname.indexOf("/about") === -1 ?
                         <Nav className="ms-auto">
-                            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Habilidades</Nav.Link>
-                            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projetos</Nav.Link>
-                            <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contato</Nav.Link>
-                            <Link to="/sobre" className={activeLink === 'sobre' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('sobre')}>Sobre</Link>
+                            <Nav.Link href="#home" className={activeLink === 'Home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Home')}>Home</Nav.Link>
+                            <Nav.Link href="#skills" className={activeLink === 'Habilidades' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Habilidades')}>Habilidades</Nav.Link>
+                            <Nav.Link href="#projects" className={activeLink === 'Projetos' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Projetos')}>Projetos</Nav.Link>
+                            <Nav.Link href="#contact" className={activeLink === 'Contato' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Contato')}>Contato</Nav.Link>
+                            <Link to="/about" className={activeLink === 'Sobre' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Sobre')}>Sobre</Link>
                         </Nav> :
                         <Nav className="ms-auto link">
-                            <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Link>
-                            <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Habilidades</Link>
-                            <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projetos</Link>
-                            <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contato</Link>
-                            <Link to="/sobre" className={'active navbar-link primary'} onClick={() => onUpdateActiveLink('projects')}>Sobre</Link>
+                            <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Home')}>Home</Link>
+                            <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Habilidades')}>Habilidades</Link>
+                            <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Projetos')}>Projetos</Link>
+                            <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Contato')}>Contato</Link>
+                            <Link to="/about" className={'active navbar-link primary'} onClick={() => onUpdateActiveLink('Sobre')}>Sobre</Link>
                         </Nav>
                     }
                     <span className="navbar-text d-flex justify-content-around">
