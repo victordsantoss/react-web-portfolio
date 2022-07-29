@@ -9,11 +9,6 @@ import { Footer } from '../../components/Footer/Footer';
 
 const HomePage = () => {
 
-    useEffect(() => {
-        const newPageTitle = 'Home | <victordsantoss />';
-        document.title = newPageTitle;
-    }, []);
-
     return (
         <div className="app">
             <NavBar />
