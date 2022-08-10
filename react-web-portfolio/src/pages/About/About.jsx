@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { NavBar } from "../../components/NavBar/NavBar";
+import { GithubData } from '../../components/GithubData/GithubData';
 import { Timeline } from "../../components/Timeline/Timeline";
 import { About } from "../../components/About/About";
+import { Footer } from '../../components/Footer/Footer';
 
 export const AboutPage = () => {
 
@@ -15,6 +17,8 @@ export const AboutPage = () => {
             <NavBar />
             <About />
             <Timeline />
+            <Footer />
+
         </div>
     )
 }

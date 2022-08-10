@@ -1,0 +1,20 @@
+.personal-project-container {
+    padding-top: 100px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.go-back {
+    padding-top: 40px;
+}
+
+.go-back button {
+    color: #EAEAEA;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.go-back button span {
+    padding-left: 10px;
+}

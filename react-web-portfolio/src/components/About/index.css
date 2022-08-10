@@ -19,20 +19,56 @@
     border-radius: 20px;
 }
 
-.about-img img{
-    height: auto;
+.about-img img {
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
     border-radius: 10px;
 }
 
-.about-description {
-    height: 500px;
-    border: 1px solid #eaeaea;
+.about-description-container {
+    max-height: 500px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
+
+.about-description {
+    text-align: justify;
+}
+
+.curriculo-download {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.curriculo-download p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+
+.curriculo-download .download{
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.curriculo-download .download:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
 
 /* ************* RESPONSIVIDADE ********** */
 @media (max-width:768px) {
     .about-container {
         padding-top: 50px;
+    }
+    .curriculo-download .download{
+        margin: 80px 0px;
     }
 }

@@ -54,7 +54,9 @@ export const Banner = () => {
                             Atualmente tenho 2 anos de experiência de desenvolvimento web e mobile trabalhando de maneira full stack com foco nas tecnologias SQL - Mysql,
                             NoSQL - MongoDb, NodeJs, TypeScript, ReactJs, ReactNative, Bootstrap, CSS e StyledComponents, além de ser um entusiasta em metodologias ágeis.
                         </p>
-                        <button onClick={() => console.log("ok")} className="tagline">Vamos nos conectar <AiOutlineArrowRight size={25} /></button>
+                        <button className="tagline">
+                            <a href="#contact" className="lets-connect">Vamos nos conectar <AiOutlineArrowRight size={25} /></a>
+                        </button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <TrackVisibility>

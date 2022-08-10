@@ -1,8 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
-h2{
+h2 {
     padding-top: 30px;
-    font-size: 2rem;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.centraliza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.line {
+    border-bottom: 1px solid #eaeaea;
+    width: 50%;
 }
 
 .container-timeline {
@@ -47,6 +60,13 @@ h2{
     font-size: 16px;
     line-height: 30px;
     font-weight: 300;
+}
+
+.timeline-content .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 .timeline-content .date {
@@ -120,7 +140,16 @@ h2{
 
 /* *************** RESPONSIVIDADE ************** */
 @media (max-width: 768px) {
-    h2{
+    h2 {
         padding: 10px 0px;
+    }
+    .line {
+        width: 70%;
+    }
+    .container-timeline {
+        padding: 40px 0;
+    }
+    .tittle{
+        margin-top: 100px;
     }
 }
