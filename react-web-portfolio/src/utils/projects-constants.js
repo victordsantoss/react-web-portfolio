@@ -11,7 +11,7 @@ export const projects = [
         title: 'Groovoo Ticketing',
         description: 'Desenvolvedor Full stack',
         imgUrl: groovooTicketing,
-        path: `/projects/1/?project=groovoo_ticketing`,
+        path: `/projects?project=groovoo_ticketing`,
         link: 'https://groovooapp.com/',
     },
     {
@@ -19,7 +19,7 @@ export const projects = [
         title: 'Groovoo Social Networking',
         description: 'Desenvolvedor Full stack',
         imgUrl: groovooSocialNetworking,
-        path: '/project?=groovoo_social_networking',
+        path: `/projects?project=groovoo_social_networking`,
         link: 'https://apps.apple.com/br/app/groovoo-social-networking/id1529056214'
     },
     {
@@ -27,7 +27,7 @@ export const projects = [
         title: 'Groovoo Ticketing',
         description: 'Desenvolvedor Full stack',
         imgUrl: groovooOrganizer,
-        path: '/project?=groovoo_organizer',
+        path: `/projects?project=groovoo_organizer`,
         link: 'https://apps.apple.com/br/app/groovoo-organizer/id1593068649'
     },
     {
@@ -35,7 +35,7 @@ export const projects = [
         title: 'Concurso de Redação da Defensoria Pública da União',
         description: 'Desenvolvedor fron-end',
         imgUrl: concursoDeRedacao,
-        path: '/project?=dpu_concurso_de_redacao',
+        path: `/projects?project=dpu_concurso_de_redacao`,
         link: 'https://concursoderedacao.dpu.def.br/'
     },
     {
@@ -43,7 +43,7 @@ export const projects = [
         title: 'Portal DPU',
         description: 'Desenvolvedor front end',
         imgUrl: portalDpu,
-        path: '/project?=dpu_portal',
+        path: `/projects?project=dpu_portal`,
         link: 'https://www.dpu.def.br/'
     },
     {
@@ -51,7 +51,7 @@ export const projects = [
         title: 'Portal de Promoção de Direitos Humanos - DPU',
         description: 'Desenvolvedor Full stack',
         imgUrl: promocaoDeDireitosHumanos,
-        path: '/project?=dpu_direitos_humanos',
+        path: `/projects?project=dpu_direitos_humanos`,
         link: 'https://promocaodedireitoshumanos.dpu.def.br/'
     }
 ]

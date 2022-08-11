@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
 import './index.css';
+import { ProjectContext } from '../../Context/ProjectContext';
 
 export const ProjectDetails = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const params = new URLSearchParams(location.search);
+    const { project } = useContext(ProjectContext);
 
     useEffect(() => {
         const newPageTitle = 'Landing | <victordsantoss />';
@@ -16,6 +17,7 @@ export const ProjectDetails = () => {
 
     return (
         <section className="personal-project-container">
+            {console.log("PROJETO ATUAL", project)}
             <Container>
                 <div className='go-back'>
                     <button onClick={() => navigate(-1)} >

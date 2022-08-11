@@ -20,6 +20,7 @@
 }
 
 .link-project:hover {
+    cursor: pointer;
     text-decoration: none;
     color: #eaeaea;
 }

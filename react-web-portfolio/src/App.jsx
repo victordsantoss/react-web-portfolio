@@ -1,13 +1,14 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ProjectContextProvider } from './Context/ProjectContext';
 
 import ApplicationRoutes from "./routes";
 
 function App() {
   return (
-    <div className="App">
+    <ProjectContextProvider>
       <ApplicationRoutes />
-    </div>
+    </ProjectContextProvider>
   );
 }
 

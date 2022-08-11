@@ -10,7 +10,7 @@ const ApplicationRoutes = () => {
             <Routes>
                 <Route exact path="/" element={<HomePage />} />
                 <Route exact path="/about" element={<AboutPage />} />
-                <Route exact path="/projects/:id/" element={<ProjectDetailsPage />} />
+                <Route exact path="/projects" element={<ProjectDetailsPage />} />
             </Routes>
         </Router>
     );

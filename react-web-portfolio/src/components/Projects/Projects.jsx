@@ -18,11 +18,11 @@ export const Projects = () => {
                                     <Tab.Pane eventKey="first">
                                         <Row>
                                             {
-                                                projects.map((project, index) => {
+                                                projects.map((currentProject, index) => {
                                                     return (
                                                         <ProjectCard
                                                             key={index}
-                                                            {...project}
+                                                            {...currentProject}
                                                         />
                                                     )
                                                 })
