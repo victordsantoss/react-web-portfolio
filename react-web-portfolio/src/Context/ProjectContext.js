@@ -5,7 +5,7 @@ export const ProjectContext = createContext();
 
 export function ProjectContextProvider({ children }) {
 
-    const [project, setProject] = useState({});
+    const [project, setProject] = useState();
 
     return (
         <ProjectContext.Provider value={{ project, setProject }}>
