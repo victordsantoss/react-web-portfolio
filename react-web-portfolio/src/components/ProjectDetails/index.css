@@ -1,3 +1,9 @@
+.centraliza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .personal-project-container {
     padding-top: 100px;
     width: 100vw;
@@ -18,3 +24,19 @@
 .go-back button span {
     padding-left: 10px;
 }
+
+.project-slider {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+
+  }
+  
+  .project-slider .item img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    margin: 0 auto 15px auto;
+    border-radius: 20px;
+  }

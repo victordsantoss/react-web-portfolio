@@ -10,11 +10,11 @@ export const Development = () => {
                 <p className="line"></p>
                 <div className="development-skills">
                     <div className="development-skills-box">
-                        <div className="row mx-0 my-0"ð>
+                        <div className="row mx-0 my-0">
                             {
-                                tecnologyIcons.map((icon) => {
+                                tecnologyIcons.map((icon, index) => {
                                     return (
-                                        <div className="col-5 col-md-2 development-skills-box-item">
+                                        <div className="col-5 col-md-2 development-skills-box-item" key={index}>
                                             {icon.icon}
                                         </div>
                                     )

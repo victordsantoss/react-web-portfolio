@@ -4,13 +4,30 @@ import groovooOrganizer from '../assets/img/projects/groovoo-organizer.jpeg';
 import concursoDeRedacao from '../assets/img/projects/dpu-concurso-de-redacao.png';
 import portalDpu from '../assets/img/projects/portal-dpu.png';
 import promocaoDeDireitosHumanos from '../assets/img/projects/promocao-de-direitos-humanos.png';
+import { ProjectSkillsConstants } from './project-skills-constants';
 
 export const projects = [
     {
         id: 1,
         title: 'Groovoo Ticketing',
-        description: 'Desenvolvedor Full stack',
+        acting: 'Desenvolvedor Full stack',
+        description: 'O Groovoo consiste em uma plataforma de venda de ingressos para eventos localizados nos Estados Unidos. Meu papel no desenvolvimento foi de maneira full stack com base no uso de TypeScript e ReactJs, além do uso de banco de dados relacionais e tecnologias como Firebase e Amazon AWS. ',
         imgUrl: groovooTicketing,
+        imgs: [
+            groovooTicketing,
+            groovooTicketing,
+            groovooTicketing
+        ],
+        skills: [
+            ProjectSkillsConstants.node,
+            ProjectSkillsConstants.react,
+            ProjectSkillsConstants.typeScript,
+            ProjectSkillsConstants.jest,
+            ProjectSkillsConstants.mysql,
+            ProjectSkillsConstants.firebase,
+            ProjectSkillsConstants.docker,
+            ProjectSkillsConstants.git,
+        ],
         path: `/projects?project=groovoo_ticketing`,
         link: 'https://groovooapp.com/',
     },
@@ -55,3 +72,22 @@ export const projects = [
         link: 'https://promocaodedireitoshumanos.dpu.def.br/'
     }
 ]
+
+export const responsive = {
+    superLargeDesktop: {
+        breakpoint: { max: 4000, min: 3000 },
+        items: 1
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 1
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 1
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+    }
+};
