@@ -6,13 +6,15 @@ import { navbarIcons } from '../../utils/navbar-icons';
 import eu from '../../assets/img/about/eu2.png';
 import './index.css';
 import '../NavBar/index.css';
+import { GoBack } from '../GoBack/GoBack';
 
 export const About = () => {
     return (
         <section className="about-container">
             <div className="about-my">
                 <Container className="text-center">
-                    <Row>
+                    <GoBack />
+                    <Row className="pt-5">
                         <Col md={4} className="about-img">
                             <img src={eu} alt="" />
                         </Col>

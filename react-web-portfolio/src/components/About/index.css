@@ -1,12 +1,12 @@
 .about-container {
     background-color: #111;
-    padding-top: 80px;
+    padding-top: 40px;
     width: 100vw;
     height: auto;
 }
 
 .about-my {
-    padding-top: 80px;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;

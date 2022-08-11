@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useEffect, useContext } from "react";
 import { Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom"
 import { ProjectContext } from "../../Context/ProjectContext";
@@ -6,10 +6,11 @@ import './index.css';
 
 export const ProjectCard = (currentProject, key) => {
     const { setProject } = useContext(ProjectContext);
-    let navigate = useNavigate()
+    let navigate = useNavigate();
 
     const handleProject = () => {
         setProject(currentProject);
+        localStorage.setItem('project',  JSON.stringify(currentProject));
         navigate(`${currentProject.path}`)
     }
 
