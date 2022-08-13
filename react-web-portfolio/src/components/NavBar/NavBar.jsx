@@ -54,14 +54,14 @@ export const NavBar = () => {
                             <Nav.Link href="#skills" className={activeLink === 'Habilidades' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Habilidades')}>Habilidades</Nav.Link>
                             <Nav.Link href="#projects" className={activeLink === 'Projetos' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Projetos')}>Projetos</Nav.Link>
                             <Nav.Link href="#contact" className={activeLink === 'Contato' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Contato')}>Contato</Nav.Link>
-                            <Link to="/about" className={activeLink === 'Sobre' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Sobre')}>Sobre</Link>
+                            <Nav.Link href="/about#start-page" className={'active navbar-link primary'} onClick={() => onUpdateActiveLink('Sobre')}>Sobre</Nav.Link>
                         </Nav> :
                         <Nav className="ms-auto link">
                             <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Home')}>Home</Link>
                             <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Habilidades')}>Habilidades</Link>
                             <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Projetos')}>Projetos</Link>
                             <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Contato')}>Contato</Link>
-                            <Link to="/about" className={'active navbar-link primary'} onClick={() => onUpdateActiveLink('Sobre')}>Sobre</Link>
+                            <Nav.Link href="/about#start-page" className={'active navbar-link primary'} onClick={() => onUpdateActiveLink('Sobre')}>Sobre</Nav.Link>
                         </Nav>
                     }
                     <span className="navbar-text d-flex justify-content-around">

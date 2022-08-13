@@ -10,7 +10,7 @@ import { GoBack } from '../GoBack/GoBack';
 
 export const About = () => {
     return (
-        <section className="about-container">
+        <section className="about-container" id="start-page">
             <div className="about-my">
                 <Container className="text-center">
                     <GoBack />
@@ -34,6 +34,7 @@ export const About = () => {
                                 <a href="https://t.me/victordsantoss" target="_blank" rel="noreferrer" ><img src={navbarIcons.telegram} alt="" /></a>
                             </div>
                             <div className="curriculo-download">
+                    
                                 <p> Baixe a versão do meu currículo em PDF
                                     <a download href="react-web-portfolio/src/assets/curriculo/cv_victor_samuel.pdf">
                                         <FaDownload
