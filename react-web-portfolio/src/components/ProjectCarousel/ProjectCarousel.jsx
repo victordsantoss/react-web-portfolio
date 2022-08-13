@@ -1,14 +1,13 @@
-import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
-import { projects } from '../../utils/projects-constants';
-import { responsive } from '../../utils/projects-constants';
+import { responsiveProjectWeb, responsiveProjectMobile } from '../../utils/responsive-constants';
 import "react-multi-carousel/lib/styles.css";
 import './index.css';
 
-export const ProjectCarousel = ({ imgs, link }) => {
+export const ProjectCarousel = ({ imgs, link, type }) => {
     return (
         <section>
-            <Carousel responsive={responsive} infinite={true} className='project-slider'>
+            <Carousel responsive={type === "web" ? responsiveProjectWeb : responsiveProjectMobile} infinite={true} className='project-slider' itemClass="carousel-item-padding-40-px"
+            >
                 {
                     imgs.map((img, index) => {
                         return <div className='item' key={index}>

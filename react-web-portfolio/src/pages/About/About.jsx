@@ -18,7 +18,6 @@ export const AboutPage = () => {
             <About />
             <Timeline />
             <Footer />
-
         </div>
     )
 }

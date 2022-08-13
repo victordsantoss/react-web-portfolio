@@ -1,14 +1,50 @@
-.centraliza {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .personal-project-container {
     padding-top: 100px;
     width: 100vw;
     height: 100vh;
 }
 
+.centraliza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.action {
+    font-size: 30px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+}
 
+.description {
+    text-align: justify;
+}
+
+.development-skills-project-box-item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+}
+
+.development-skills-project-box-item:hover {
+    transform: scale(1.1);
+    transition: 0.5ms;
+    color: rgb(120, 121, 252);
+}
+
+.click-link{
+    text-decoration: none;
+    color: #fff
+}
+
+.click-button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+    color: #eaeaea;
+}

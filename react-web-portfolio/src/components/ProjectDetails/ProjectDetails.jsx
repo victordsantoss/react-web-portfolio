@@ -1,5 +1,6 @@
 import React, { useEffect, useContext, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { GiClick } from 'react-icons/gi';
 import { ProjectContext } from '../../Context/ProjectContext';
 import { ProjectCarousel } from '../ProjectCarousel/ProjectCarousel';
 import { GoBack } from '../GoBack/GoBack';
@@ -36,7 +37,7 @@ export const ProjectDetails = () => {
         return (
             <section className="personal-project-container">
                 <Container>
-                    <GoBack/>
+                    <GoBack />
                     <Row>
                         <Col md={12}>
                             <div>
@@ -48,27 +49,39 @@ export const ProjectDetails = () => {
                                 <ProjectCarousel
                                     imgs={project.imgs}
                                     link={project.link}
+                                    type={project.type}
                                 />
-                            </div>
-                            <div className="row mx-0 my-0 centraliza">
-                                {
-                                    project && project.skills.map((skill, index) => {
-                                        return (
-                                            <div className="col-5 col-md-1 development-skills-box-item" key={index}>
-                                                <img src={skill} alt="" />
-                                            </div>
-                                        )
-                                    })
-                                }
                             </div>
                         </Col>
                         <Col md={5}>
                             <div>
-                                <p>{project.acting}</p>
-                                <p>{project.description}</p>
+                                <p className="action">{project.acting}</p>
+                                <p className="description">{project.description}</p>
+                            </div>
+                            <Row className="mx-0 my-0 centraliza">
+                                {
+                                    project && project.skills.map((skill, index) => {
+                                        return (
+                                            <Col md={2} className="development-skills-project-box-item mt-3" key={index}>
+                                                <img src={skill} alt="" />
+                                            </Col>
+                                        )
+                                    })
+                                }
+                            </Row>
+                            <div className="mx-0 my-0 centraliza">
+                                <p>Acesse o projeto
+                                    <span>
+                                        <a href={project.link} target="_blank" className="click-link">
+                                            <GiClick
+                                                size={30}
+                                                className="click-button"
+                                            />
+                                        </a>
+                                    </span>
+                                </p>
                             </div>
                         </Col>
-
                     </Row>
                 </Container>
             </section>
