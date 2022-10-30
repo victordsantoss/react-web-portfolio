@@ -10,15 +10,6 @@ const LandingPage = () => {
         document.title = newPageTitle;
     }, []);
 
-    return (
-        <div className="landing-container">
-            <section className="landing-child">
-                <Link to='/home' className="title">
-                    <span>{Title}</span>
-                </Link>
-            </section>
-        </div>
-    );
 };
 
 export default LandingPage;

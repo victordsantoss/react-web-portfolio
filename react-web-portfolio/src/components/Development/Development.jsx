@@ -1,12 +1,13 @@
 import { Container } from 'react-bootstrap';
 import { tecnologyIcons } from '../../utils/tecnology-icons';
-import colorSharp from '../../assets/img/banners/color-sharp.png'
+import colorSharp from '../../assets/img/banners/color-sharp.png';
+import "./index.css";
 
 export const Development = () => {
     return (
-        <section className="project">
+        <section className="development" id='development'>
             <Container>
-                <h2>Principais tecnologias</h2>
+                <h2>Tecnologias</h2>
                 <p className="line"></p>
                 <div className="development-skills">
                     <div className="development-skills-box">

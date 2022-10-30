@@ -51,14 +51,14 @@ export const NavBar = () => {
                     {window.location.pathname.indexOf("/about") === -1 ?
                         <Nav className="ms-auto">
                             <Nav.Link href="#home" className={activeLink === 'Home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Home')}>Home</Nav.Link>
-                            <Nav.Link href="#skills" className={activeLink === 'Habilidades' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Habilidades')}>Habilidades</Nav.Link>
+                            <Nav.Link href="#development" className={activeLink === 'Tecnologias' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Tecnologias')}>Tecnologias</Nav.Link>
                             <Nav.Link href="#projects" className={activeLink === 'Projetos' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Projetos')}>Projetos</Nav.Link>
                             <Nav.Link href="#contact" className={activeLink === 'Contato' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Contato')}>Contato</Nav.Link>
                             <Nav.Link href="/about#start-page" className={'active navbar-link primary'} onClick={() => onUpdateActiveLink('Sobre')}>Sobre</Nav.Link>
                         </Nav> :
                         <Nav className="ms-auto link">
                             <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Home')}>Home</Link>
-                            <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Habilidades')}>Habilidades</Link>
+                            <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Tecnologias')}>Tecnologias</Link>
                             <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Projetos')}>Projetos</Link>
                             <Link to="/" className={'navbar-link'} onClick={() => onUpdateActiveLink('Contato')}>Contato</Link>
                             <Nav.Link href="/about#start-page" className={'active navbar-link primary'} onClick={() => onUpdateActiveLink('Sobre')}>Sobre</Nav.Link>

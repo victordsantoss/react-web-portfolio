@@ -1,9 +1,8 @@
 /************ Banner Css ************/
+
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('../../assets/img/banners/banner-bg.png');
-  /* background-image: url('../../assets/img/color-sharp.png'); */
+  padding: 240px 0 50px 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,6 +68,7 @@
 
 .banner img {
   animation: updown 3s linear infinite;
+  width: 400px;
 }
 
 @keyframes updown {
@@ -87,4 +87,11 @@
 
 .txt-rotate>.wrap {
   border-right: 0.08em solid #666;
+}
+
+/* ************* RESPONSIVIDADE ********** */
+@media (max-width:768px) {
+  .banner img {
+    width: 90%;
+  }
 }

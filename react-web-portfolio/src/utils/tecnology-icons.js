@@ -5,6 +5,7 @@ import { FaReact, FaDocker, FaUbuntu } from 'react-icons/fa';
 import { SiTypescript, SiMongodb } from 'react-icons/si';
 import { DiScrum } from 'react-icons/di';
 import { ImSpinner6 } from 'react-icons/im';
+import { SiNestjs, SiAmazonaws } from "react-icons/si";
 
 export const tecnologyIcons = [
     {
@@ -47,9 +48,9 @@ export const tecnologyIcons = [
         icon: <FaUbuntu size={80} />,
     },
     {
-        icon: <ImSpinner6 size={80} />,
+        icon: <SiNestjs size={80} />,
     },
     {
-        icon: <ImSpinner6 size={80} />
+        icon: <SiAmazonaws size={80} />
     },
 ]

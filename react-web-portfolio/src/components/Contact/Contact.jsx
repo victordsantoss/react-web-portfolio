@@ -36,7 +36,7 @@ export const Contact = () => {
         setButtonText("Send");
         let result = await response.json();
         setFormDetails(formInitialDetails);
-        if (result.code == 200) {
+        if (result.code === 200) {
             setStatus({ succes: true, message: 'Mensagem enviada com sucesso' });
         } else {
             setStatus({ succes: false, message: 'Algo deu errado, tente novamente mais tarde.' });

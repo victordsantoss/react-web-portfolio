@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import { FaDownload } from 'react-icons/fa';
 import { navbarIcons } from '../../utils/navbar-icons';
 import eu from '../../assets/img/about/eu2.png';
@@ -36,7 +35,7 @@ export const About = () => {
                             <div className="curriculo-download">
                     
                                 <p> Baixe a versão do meu currículo em PDF
-                                    <a download href="react-web-portfolio/src/assets/curriculo/cv_victor_samuel.pdf">
+                                    <a download href="https://drive.google.com/file/d/1fOQLfEQ0R9QAUFOhOdwJ-dnUTY_f4tNo/view?usp=sharing" target="_blank">
                                         <FaDownload
                                             size={30}
                                             className="download"

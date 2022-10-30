@@ -1,15 +1,16 @@
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
+  padding: 18px 10px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
+  border-bottom: #eaeaea solid 1px;
 }
 
 nav.navbar.scrolled {
-  padding: 0px 0;
+  padding: 18px 10px;
   background-color: #111;
   opacity: 0.9;
 }
