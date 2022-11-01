@@ -86,3 +86,18 @@
     letter-spacing: 0.5px;
     margin-top: 20px;
 }
+
+/* ************* RESPONSIVIDADE ********** */
+@media (max-width:768px) {
+    .align-items-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+  
+  }

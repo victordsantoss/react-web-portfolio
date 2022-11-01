@@ -8,7 +8,7 @@ export const Footer = () => {
         <footer className="footer">
             <Container>
                 <Row className="align-items-center">
-                    <Col size={12} sm={6}>
+                    <Col size={12} sm={6} className="align-items-center">
                         <IoLogoXing
                             size={60}
                             className="img-logo"

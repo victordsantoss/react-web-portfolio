@@ -53,9 +53,11 @@ export const Banner = () => {
                         <p>
                             {about}
                         </p>
-                        <button className="tagline">
-                            <a href="#contact" className="lets-connect">Vamos nos conectar <AiOutlineArrowRight size={25} /></a>
-                        </button>
+                        <div className="p-0 m-0 connect">
+                            <button className="tagline">
+                                <a href="#contact" className="lets-connect pb-3">Vamos nos conectar <AiOutlineArrowRight size={25} /></a>
+                            </button>
+                        </div>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <TrackVisibility>

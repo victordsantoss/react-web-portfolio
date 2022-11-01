@@ -104,25 +104,79 @@ export const projects = [
     },
     {
         id: 4,
+        type: 'web',
         title: 'Concurso de Redação da Defensoria Pública da União',
         acting: 'Desenvolvedor Fron-end',
+        description: 'O Groovoo Organizer consite em um aplicativo voltado para organizadores dos eventos criados dentro da plataforma Groovoo, seu objetivo é permitir que os organizadores tenham um fácil acesso a todos os dados do eventos. Meu papel no desenvolvimento foi com base no uso de TypeScript e ReactNative.',
         imgUrl: concursoDeRedacao,
+        imgs: [
+            groovooOrganizer2,
+            groovooOrganizer3,
+            groovooOrganizer4,
+            groovooOrganizer5
+        ],
+        skills: [
+            ProjectSkillsConstants.node,
+            ProjectSkillsConstants.react,
+            ProjectSkillsConstants.typeScript,
+            ProjectSkillsConstants.jest,
+            ProjectSkillsConstants.mysql,
+            ProjectSkillsConstants.firebase,
+            ProjectSkillsConstants.docker,
+            ProjectSkillsConstants.git,
+        ],
         path: `/projects?project=dpu_concurso_de_redacao`,
         link: 'https://concursoderedacao.dpu.def.br/'
     },
     {
         id: 5,
+        type: 'web',
         title: 'Portal DPU',
         acting: 'Desenvolvedor Front-end',
+        description: 'O Groovoo Organizer consite em um aplicativo voltado para organizadores dos eventos criados dentro da plataforma Groovoo, seu objetivo é permitir que os organizadores tenham um fácil acesso a todos os dados do eventos. Meu papel no desenvolvimento foi com base no uso de TypeScript e ReactNative.',
         imgUrl: portalDpu,
+        imgs: [
+            groovooOrganizer2,
+            groovooOrganizer3,
+            groovooOrganizer4,
+            groovooOrganizer5
+        ],
+        skills: [
+            ProjectSkillsConstants.node,
+            ProjectSkillsConstants.react,
+            ProjectSkillsConstants.typeScript,
+            ProjectSkillsConstants.jest,
+            ProjectSkillsConstants.mysql,
+            ProjectSkillsConstants.firebase,
+            ProjectSkillsConstants.docker,
+            ProjectSkillsConstants.git,
+        ],
         path: `/projects?project=dpu_portal`,
         link: 'https://www.dpu.def.br/'
     },
     {
         id: 6,
+        type: 'web',
         title: 'Portal de Promoção de Direitos Humanos - DPU',
         acting: 'Desenvolvedor Front-end',
+        description: 'O Groovoo Organizer consite em um aplicativo voltado para organizadores dos eventos criados dentro da plataforma Groovoo, seu objetivo é permitir que os organizadores tenham um fácil acesso a todos os dados do eventos. Meu papel no desenvolvimento foi com base no uso de TypeScript e ReactNative.',
         imgUrl: promocaoDeDireitosHumanos,
+        imgs: [
+            groovooOrganizer2,
+            groovooOrganizer3,
+            groovooOrganizer4,
+            groovooOrganizer5
+        ],
+        skills: [
+            ProjectSkillsConstants.node,
+            ProjectSkillsConstants.react,
+            ProjectSkillsConstants.typeScript,
+            ProjectSkillsConstants.jest,
+            ProjectSkillsConstants.mysql,
+            ProjectSkillsConstants.firebase,
+            ProjectSkillsConstants.docker,
+            ProjectSkillsConstants.git,
+        ],
         path: `/projects?project=dpu_direitos_humanos`,
         link: 'https://promocaodedireitoshumanos.dpu.def.br/'
     }
