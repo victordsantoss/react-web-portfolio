@@ -37,6 +37,7 @@ export const ProjectDetails = () => {
         return (
             <section className="personal-project-container">
                 <Container>
+                    {console.log(project.type)}
                     <GoBack />
                     <Row>
                         <Col md={12}>

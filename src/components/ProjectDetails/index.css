@@ -1,7 +1,8 @@
 .personal-project-container {
     padding-top: 100px;
+    padding-bottom: 200px;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 .centraliza {
@@ -37,12 +38,12 @@
     color: rgb(120, 121, 252);
 }
 
-.click-link{
+.click-link {
     text-decoration: none;
     color: #fff
 }
 
-.click-button:hover{
+.click-button:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: 0.5s;
@@ -53,5 +54,6 @@
 @media (max-width:768px) {
     .personal-project-container {
         padding-top: 0px;
+        padding-bottom: 50px;
     }
-  }
+}
