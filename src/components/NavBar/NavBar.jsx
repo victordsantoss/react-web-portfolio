@@ -49,7 +49,7 @@ export const NavBar = () => {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     {window.location.pathname.indexOf("/about") === -1 ?
-                        <Nav className="ms-auto">
+                        <Nav className="ms-auto pt-md-responsive ">
                             <Nav.Link href="#home" className={activeLink === 'Home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Home')}>Home</Nav.Link>
                             <Nav.Link href="#development" className={activeLink === 'Tecnologias' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Tecnologias')}>Tecnologias</Nav.Link>
                             <Nav.Link href="#projects" className={activeLink === 'Projetos' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Projetos')}>Projetos</Nav.Link>
