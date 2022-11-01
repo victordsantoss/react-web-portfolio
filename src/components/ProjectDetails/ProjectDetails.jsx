@@ -53,7 +53,7 @@ export const ProjectDetails = () => {
                                 />
                             </div>
                         </Col>
-                        <Col md={5}>
+                        <Col md={5} >
                             <div>
                                 <p className="action">{project.acting}</p>
                                 <p className="description">{project.description}</p>
@@ -62,7 +62,7 @@ export const ProjectDetails = () => {
                                 {
                                     project && project.skills.map((skill, index) => {
                                         return (
-                                            <Col md={2} className="development-skills-project-box-item mt-3" key={index}>
+                                            <Col xs={2} md={2} xl={2} className="development-skills-project-box-item mt-3" key={index}>
                                                 <img src={skill} alt="" />
                                             </Col>
                                         )

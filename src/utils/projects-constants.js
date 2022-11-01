@@ -14,6 +14,15 @@ import groovooSocial5 from '../assets/img/projects/groovoo-social-5.jpeg';
 import groovooSocial6 from '../assets/img/projects/groovoo-social-6.jpeg';
 import groovooSocial7 from '../assets/img/projects/groovoo-social-7.jpeg';
 import groovooSocial8 from '../assets/img/projects/groovoo-social-8.jpeg';
+import concursoDpu1 from '../assets/img/projects/concurso-dpu-1.png';
+import concursoDpu2 from '../assets/img/projects/concurso-dpu-2.png';
+import portalDpu1 from '../assets/img/projects/portal-dpu-1.png';
+import portalDpu2 from '../assets/img/projects/portal-dpu-2.png';
+import dndhDpu1 from '../assets/img/projects/dndh-dpu-1.png';
+import dndhDpu2 from '../assets/img/projects/dndh-dpu-2.png';
+import dndhDpu3 from '../assets/img/projects/dndh-dpu-3.png';
+import dndhDpu4 from '../assets/img/projects/dndh-dpu-4.png';
+import dndhDpu5 from '../assets/img/projects/dndh-dpu-5.png';
 
 import concursoDeRedacao from '../assets/img/projects/dpu-concurso-de-redacao.png';
 import portalDpu from '../assets/img/projects/portal-dpu.png';
@@ -42,6 +51,8 @@ export const projects = [
             ProjectSkillsConstants.firebase,
             ProjectSkillsConstants.docker,
             ProjectSkillsConstants.git,
+            ProjectSkillsConstants.aws,
+
         ],
         path: `/projects?project=groovoo_ticketing`,
         link: 'https://groovooapp.com/',
@@ -72,6 +83,7 @@ export const projects = [
             ProjectSkillsConstants.firebase,
             ProjectSkillsConstants.docker,
             ProjectSkillsConstants.git,
+            ProjectSkillsConstants.aws,
         ],
         path: `/projects?project=groovoo_social_networking`,
         link: 'https://apps.apple.com/br/app/groovoo-social-networking/id1529056214'
@@ -98,6 +110,7 @@ export const projects = [
             ProjectSkillsConstants.firebase,
             ProjectSkillsConstants.docker,
             ProjectSkillsConstants.git,
+            ProjectSkillsConstants.aws,
         ],
         path: `/projects?project=groovoo_organizer`,
         link: 'https://apps.apple.com/br/app/groovoo-organizer/id1593068649'
@@ -105,22 +118,17 @@ export const projects = [
     {
         id: 4,
         type: 'web',
-        title: 'Concurso de Redação da Defensoria Pública da União',
+        title: 'Concurso de Redação da Defensoria Pública da União - DPU',
         acting: 'Desenvolvedor Fron-end',
-        description: 'O Groovoo Organizer consite em um aplicativo voltado para organizadores dos eventos criados dentro da plataforma Groovoo, seu objetivo é permitir que os organizadores tenham um fácil acesso a todos os dados do eventos. Meu papel no desenvolvimento foi com base no uso de TypeScript e ReactNative.',
+        description: 'O Portal do concurso de Redação da DPU consiste em uma plataforma para o lançamento do concurso de redação anual, que visa proporcionar discussões de temas relevantes e presentes na realidade social brasileira e no mundo. Nesse projeto trabalhei no front-ent com o uso de ReactJs.',
         imgUrl: concursoDeRedacao,
         imgs: [
-            groovooOrganizer2,
-            groovooOrganizer3,
-            groovooOrganizer4,
-            groovooOrganizer5
+            concursoDpu1,
+            concursoDpu2,
         ],
         skills: [
-            ProjectSkillsConstants.node,
             ProjectSkillsConstants.react,
             ProjectSkillsConstants.typeScript,
-            ProjectSkillsConstants.jest,
-            ProjectSkillsConstants.mysql,
             ProjectSkillsConstants.firebase,
             ProjectSkillsConstants.docker,
             ProjectSkillsConstants.git,
@@ -133,23 +141,18 @@ export const projects = [
         type: 'web',
         title: 'Portal DPU',
         acting: 'Desenvolvedor Front-end',
-        description: 'O Groovoo Organizer consite em um aplicativo voltado para organizadores dos eventos criados dentro da plataforma Groovoo, seu objetivo é permitir que os organizadores tenham um fácil acesso a todos os dados do eventos. Meu papel no desenvolvimento foi com base no uso de TypeScript e ReactNative.',
+        description: 'O Portal DPU consiste no portal nacional da Defensoria Pública Geral da União, disponibilizando informações, notícias e documentação para o público em geral. Neste projeto trabalhei na manutenção usando JavaScript, HTML, CSS e o CMS Joomla.',
         imgUrl: portalDpu,
         imgs: [
-            groovooOrganizer2,
-            groovooOrganizer3,
-            groovooOrganizer4,
-            groovooOrganizer5
+            portalDpu1,
+            portalDpu2,
         ],
         skills: [
-            ProjectSkillsConstants.node,
-            ProjectSkillsConstants.react,
-            ProjectSkillsConstants.typeScript,
-            ProjectSkillsConstants.jest,
-            ProjectSkillsConstants.mysql,
-            ProjectSkillsConstants.firebase,
-            ProjectSkillsConstants.docker,
-            ProjectSkillsConstants.git,
+            ProjectSkillsConstants.html,
+            ProjectSkillsConstants.css,
+            ProjectSkillsConstants.javaScript,
+            ProjectSkillsConstants.wordpress,
+
         ],
         path: `/projects?project=dpu_portal`,
         link: 'https://www.dpu.def.br/'
@@ -159,23 +162,20 @@ export const projects = [
         type: 'web',
         title: 'Portal de Promoção de Direitos Humanos - DPU',
         acting: 'Desenvolvedor Front-end',
-        description: 'O Groovoo Organizer consite em um aplicativo voltado para organizadores dos eventos criados dentro da plataforma Groovoo, seu objetivo é permitir que os organizadores tenham um fácil acesso a todos os dados do eventos. Meu papel no desenvolvimento foi com base no uso de TypeScript e ReactNative.',
+        description: 'O Portal de Promoão de Direitos Humanos consiste em um platadorma de candidatura a Defensoria Pública da União para ser órgão de Direitos Humanos. Sendo desenvolvido com uso do CMS Wordpress, HTML e CSS.',
         imgUrl: promocaoDeDireitosHumanos,
         imgs: [
-            groovooOrganizer2,
-            groovooOrganizer3,
-            groovooOrganizer4,
-            groovooOrganizer5
+            dndhDpu1,
+            dndhDpu2,
+            dndhDpu3,
+            dndhDpu4,
+            dndhDpu5
         ],
         skills: [
-            ProjectSkillsConstants.node,
-            ProjectSkillsConstants.react,
-            ProjectSkillsConstants.typeScript,
-            ProjectSkillsConstants.jest,
-            ProjectSkillsConstants.mysql,
-            ProjectSkillsConstants.firebase,
-            ProjectSkillsConstants.docker,
-            ProjectSkillsConstants.git,
+            ProjectSkillsConstants.html,
+            ProjectSkillsConstants.css,
+            ProjectSkillsConstants.javaScript,
+            ProjectSkillsConstants.wordpress,
         ],
         path: `/projects?project=dpu_direitos_humanos`,
         link: 'https://promocaodedireitoshumanos.dpu.def.br/'

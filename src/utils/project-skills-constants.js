@@ -11,7 +11,9 @@ export const ProjectSkillsConstants =
         mysql: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
         firebase: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
         docker: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
-        git: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg',        
+        git: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg',       
+        wordpress: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg',
+        aws: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
     }
 
 
