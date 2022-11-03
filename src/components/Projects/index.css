@@ -159,3 +159,9 @@
   right: 0;
   z-index: -4;
 }
+
+.github-button a{
+  color: #eaeaea;
+  text-decoration: none;
+  font-weight: 500;
+}

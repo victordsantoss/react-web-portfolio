@@ -13,7 +13,7 @@ export const About = () => {
             <div className="about-my">
                 <Container className="text-center">
                     <GoBack />
-                    <Row className="pt-5">
+                    <Row className="pt-4">
                         <Col md={4} className="about-img">
                             <img src={eu} alt="" />
                         </Col>
@@ -33,9 +33,8 @@ export const About = () => {
                                 <a href="https://t.me/victordsantoss" target="_blank" rel="noreferrer" ><img src={navbarIcons.telegram} alt="" /></a>
                             </div>
                             <div className="curriculo-download">
-                    
                                 <p> Baixe a versão do meu currículo em PDF
-                                    <a download href="https://drive.google.com/file/d/1fOQLfEQ0R9QAUFOhOdwJ-dnUTY_f4tNo/view?usp=sharing" target="_blank">
+                                    <a download href="https://drive.google.com/file/d/1iuTF23-nz9NPEhs26RVL9UJfy67wB_ql/view?usp=sharing" target="_blank" className="pl-5" rel="noreferrer">
                                         <FaDownload
                                             size={30}
                                             className="download"

@@ -13,3 +13,11 @@
 .go-back button span {
     padding-left: 10px;
 }
+
+/* ************* RESPONSIVIDADE ********** */
+@media (max-width:768px) {
+    .go-back {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+}

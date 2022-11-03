@@ -1,6 +1,7 @@
 import { Container, Row, Col, Tab } from "react-bootstrap";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import { projects } from "../../utils/projects-constants"
+import { navbarIcons } from "../../utils/navbar-icons";
 import './index.css';
 
 export const Projects = () => {
@@ -28,6 +29,9 @@ export const Projects = () => {
                                                 })
                                             }
                                         </Row>
+                                        <p className="p-0 text-center mb-0 mt-0 github-button">
+                                            Para mais projetos acesse meu  <a href="https://github.com/victordsantoss" target="_blank">GitHub</a>
+                                        </p>
                                     </Tab.Pane>
                                 </Tab.Content>
                             </Tab.Container>
