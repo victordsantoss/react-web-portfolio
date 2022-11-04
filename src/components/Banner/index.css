@@ -2,7 +2,7 @@
 
 .banner {
   margin-top: 0;
-  padding: 170px 0 50px 0;
+  padding: 130px 0 50px 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 }
 
 .banner h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -107,5 +107,9 @@
   .tagline {
     margin-bottom: 46px !important;
     margin-top: 10px !important;
+  }
+
+  .banner img {
+    width: 300px;
   }
 }

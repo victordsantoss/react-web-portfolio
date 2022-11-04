@@ -10,7 +10,7 @@ export const Footer = () => {
                 <Row className="align-items-center">
                     <Col size={12} sm={6} className="align-items-center">
                         <IoLogoXing
-                            size={60}
+                            size={100}
                             className="img-logo"
                         />
                     </Col>

@@ -61,7 +61,7 @@ img {
 }
 
 .img-logo {
-  width: 100%;
+  width: auto;
   min-width: 50px;
   max-width: 100px;
   height: auto;
@@ -195,4 +195,15 @@ p.danger {
 
 .row {
   margin-left: 0;
+}
+
+/* ************* RESPONSIVIDADE ********** */
+@media (max-width:768px) {
+  .development-skills-box {
+    width: 100%;
+  }
+
+  .development-skills {
+    height: 500px;
+  }
 }
